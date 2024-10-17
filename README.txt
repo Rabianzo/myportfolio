@@ -28,7 +28,7 @@ To view my portfolio locally, follow these steps:
 
 2. Navigate to the project directory: `cd myportfolio`
 
-3. Open `home.html` in your browser.
+3. Open `index.html` in your browser.
 
  
 
