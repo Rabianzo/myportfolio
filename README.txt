@@ -16,13 +16,15 @@
 
 - CSS
 
+- Visual Studio Code
+
  
 
 ## Installation
 
 To view my portfolio locally, follow these steps:
 
-1. Clone the repository: `git clone https://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@github.com/Rabianzo/myportfolio.git`
+1. Clone the repository: `git clone https://github.com/Rabianzo/myportfolio.github.io.git`
 
 2. Navigate to the project directory: `cd myportfolio`
 
