@@ -24,7 +24,7 @@
 
 To view my portfolio locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/Rabianzo/myportfolio.github.io.git`
+1. Clone the repository: `git clone https://github.com/Rabianzo/myportfolio.github.io.git` to your local machine
 
 2. Navigate to the project directory: `cd myportfolio`
 
