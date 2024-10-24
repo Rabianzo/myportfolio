@@ -105,9 +105,9 @@ body {
 
 
 /*Font-Family*/ 
-.alumni-sans-pinstripe-regular {
-    font-family: "Alumni Sans Pinstripe", sans-serif;
-    font-weight: 900;
+.playfair {
+    font-family: "Playfair", sans-serif;
+    font-weight: 700;
     font-style: normal;
   }
   
@@ -180,7 +180,7 @@ body {
 
 
   .alumni-sans-pinstripe-regular-italic {
-    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-family: "Playfair", sans-serif;
     font-weight: 900;
     font-style: italic;
   }
@@ -254,7 +254,7 @@ p {
     font-size: 16px;
     cursor: pointer;
     text-decoration: none;
-    font-family: 'Alumni Sans Pinstripe';
+    font-family: 'Playfair';
     display: inline-block; /* Keeps the button size relative to its content */
     margin: 20px auto; /* Center the button vertically */
 }
