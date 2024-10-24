@@ -9,6 +9,25 @@
     padding: 10px 20px;
 }
 
+/* Hide the default cursor */
+body {
+    cursor: none;
+  }
+  
+  /* Style the circle */
+  .cursor-circle {
+    width: 50px; /* Size of the circle */
+    height: 50px;
+    border: 2px solid #ffcc00; /* Circle border color */
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease; /* Smooth movement */
+    z-index: 9999; /* Keep it on top */
+  }
+  
+
 .profile-pic {
     width: 150px; /* Width of the square */
     height: 190px; /* Height of the square */
