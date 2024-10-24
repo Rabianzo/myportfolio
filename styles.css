@@ -10,8 +10,8 @@
 }
 
 .profile-pic {
-    width: 250px; /* Width of the square */
-    height: 310px; /* Height of the square */
+    width: 150px; /* Width of the square */
+    height: 190px; /* Height of the square */
     border-radius: 10px; /* Adjust this value for more or less rounding */
     object-fit: cover; /* Ensures the image covers the square nicely */
     margin-bottom: 10px; /* Space between image and text */
