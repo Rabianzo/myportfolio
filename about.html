@@ -9,44 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Space+Mono&display=swap" rel="stylesheet">
-    <link rel=" icon" href="icon.jpg" type="image/png" sizes="32x32">
-    <style>
-        p {
-            color: #ffcc00;
-        }
-        /*Body Font Family*/
-        body {
-            font-family: 'Playfair';
-        }
-        /*Title Font Family*/
-        h1 {
-            font-family: 'Playfair';
-        }
-        /*Download Button*/
-        .download-btn {
-            background-color: #ffcc00;
-            color: black;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 25px;
-            text-align: center;
-            display: inline-block;
-            font-size: 16px;
-            cursor: pointer;
-            margin: 20px auto;
-            display: block;
-            text-decoration: none;
-            font-family: 'Playfair';
-        }
-
-        .download-btn:hover {
-            background-color: #ffaa00;
-        }
-
-        .container {
-            text-align: center;
-        }
-    </style>
+    <link rel="icon" href="icon.jpg" type="image/png" sizes="32x32">
 </head>
 <body>
     <header>
@@ -58,23 +21,42 @@
             </ul>
         </nav>
     </header>
+
     <div class="background"></div>
-    <div class="container">
-        <h1>Hey, I’m glad you made it to my "About" page!</h1>
+    
+    <section class="container">
         <img src="profile.jpg" alt="Morena R. Macheka" class="profile-pic">
         <p>I’m a software developer with a bit of a twist. Alongside my coding skills, I also have a background in graphics designing, which means I not only build things that work well, but I make sure they look good too.</p>
-        <p>My journey started with design, and over time I expanded into development, picking up languages like C, C#, Python, HTML & CSS, JavaScript, and Dart & Flutter along the way.</p>
-        <p>I’ve worked on everything from websites to apps, and I’m always pushing myself to learn more. Whether it’s creating something from scratch or improving an existing project, I’m all about clean code, creative solutions, and a smooth user experience.</p>
-    
         
-
+        <!-- Read More Content -->
+        <div class="more-content" id="about-more">
+            <p>My journey started with design, and over time I expanded into development, picking up languages like C, C#, Python, HTML & CSS, JavaScript, and Dart & Flutter along the way.</p>
+            <p>I’ve worked on everything from websites to apps, and I’m always pushing myself to learn more. Whether it’s creating something from scratch or improving an existing project, I’m all about clean code, creative solutions, and a smooth user experience.</p>
+        </div>
         
+        <!-- Read More Button -->
+        <button class="read-more-btn" onclick="toggleContent('about-more', this)">Read More</button>
+        <br>
+        <!-- Download CV Button (moved below Read More button) -->
+        <a href="cv.pdf" class="download-btn" download target="_blank">Download CV</a>
+    </section>
 
-    </div>
-    /*Download cv button*/
-    <a href="cv.pdf" class="download-btn" download target="_blank">Download CV</a>
     <footer>
-        <p>&copy; 2024 My Portfolio. Morena R. Macheka. morena.macheka@capaciti.org.za. All Rights Reserved.</p>
+        <p>&copy; 2024 My Portfolio. Morena R. Macheka. <a href="mailto:morena.macheka@capaciti.org.za">morena.macheka@capaciti.org.za</a>. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        // Toggle 'Read More' Content Visibility
+        function toggleContent(id, button) {
+            const content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+                button.innerText = "Read Less";
+            } else {
+                content.style.display = "none";
+                button.innerText = "Read More";
+            }
+        }
+    </script>
 </body>
 </html>
