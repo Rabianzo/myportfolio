@@ -48,7 +48,7 @@ p {
 }
 
 /* Download Button */
-.download-btn, .read-more-btn {
+.read-more-btn {
     background-color: #ffcc00;
     color: black;
     padding: 10px 20px;
@@ -349,8 +349,8 @@ p {
 
 /*Download button*/
 .download-btn {
-    background-color: whitesmoke;
-    color: whitesmoke;
+    background-color: #ffcc00;
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 25px;
@@ -359,7 +359,7 @@ p {
     text-decoration: none;
     font-family: 'Playfair';
     display: inline-block; /* Keeps the button size relative to its content */
-    margin: 20px auto; /* Center the button vertically */
+    margin: auto; /* Center the button vertically */
 }
 
 .download-btn:hover {
