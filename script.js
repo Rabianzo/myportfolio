@@ -1,35 +1,52 @@
-// Set up initial variables
-let mouseX = window.innerWidth / 2; // Start at the center of the screen
-let mouseY = window.innerHeight / 2;
-let circleX = mouseX;
-let circleY = mouseY;
+// script.js
 
-const circle = document.querySelector('.cursor-circle');
-const speed = 0.1; // Adjust speed of the momentum (lower values = more smooth)
-
-document.addEventListener('mousemove', function(e) {
-  // Update the target mouse position
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-});
-
-// Linear interpolation function to add smooth movement (momentum)
-function lerp(start, end, factor) {
-  return start * (1 - factor) + end * factor;
+function toggleChatbot() {
+    const chatbot = document.getElementById("chatbot");
+    chatbot.style.display = chatbot.style.display === "none" ? "block" : "none";
 }
 
-function updateCirclePosition() {
-  // Smoothly update the circle's position to follow the cursor
-  circleX = lerp(circleX, mouseX, speed);
-  circleY = lerp(circleY, mouseY, speed);
+function handleFAQClick(question) {
+    // Display selected FAQ question as a user message
+    addMessageToChat(question, "user");
 
-  // Move the circle
-  circle.style.left = `${circleX}px`;
-  circle.style.top = `${circleY}px`;
-
-  // Call this function on every animation frame
-  requestAnimationFrame(updateCirclePosition);
+    // Generate bot response based on the FAQ question
+    generateBotResponse(question);
 }
 
-// Start the animation
-updateCirclePosition();
+function addMessageToChat(message, sender) {
+    const messagesContainer = document.getElementById("messages");
+
+    const messageElement = document.createElement("div");
+    messageElement.classList.add("message", sender);
+    messageElement.textContent = message;
+
+    messagesContainer.appendChild(messageElement);
+    messagesContainer.scrollTop = messagesContainer.scrollHeight;
+}
+
+function generateBotResponse(question) {
+    let botResponse;
+
+    // Predefined responses for FAQ questions
+    switch (question) {
+        case "What are your hours of operation?":
+            botResponse = "We're open from 9 AM to 5 PM, Monday to Friday.";
+            break;
+        case "How can I contact customer support?":
+            botResponse = "You can contact customer support via email at support@example.com or call us at (123) 456-7890.";
+            break;
+        case "Where is your office located?":
+            botResponse = "Our office is located at 123 Main St, Springfield.";
+            break;
+        case "What services do you offer?":
+            botResponse = "We offer a variety of services including consulting, support, and software development.";
+            break;
+        default:
+            botResponse = "I'm here to help! Feel free to ask any questions from the options above.";
+            break;
+    }
+
+    // Display bot message after a short delay
+    setTimeout(() => addMessageToChat(botResponse, "bot"), 500);
+}
+
