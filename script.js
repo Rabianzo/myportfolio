@@ -1,4 +1,3 @@
-// script.js
 
 function toggleChatbot() {
     const chatbot = document.getElementById("chatbot");
