@@ -419,7 +419,7 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
     /* Apply animation */
-    animation: bounceWithPause 2s ease-in-out infinite; /* 5s includes bounce and pause */
+    animation: bounceWithPause 2s ease-in-out infinite;
 }
 
 
