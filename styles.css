@@ -426,7 +426,7 @@ p {
 
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Playfair';
     margin: 0;
 }
 
@@ -467,7 +467,7 @@ body {
     height: 300px;
     overflow-y: auto;
     padding: 10px;
-    background-color: #000 opacity: 0.5; /* Chat window background */
+    background-color: #000 ; /* Chat window background */
 }
 
 #messages {
