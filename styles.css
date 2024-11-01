@@ -455,7 +455,7 @@ body {
     background-color: #000; /* Chatbot background color */
     display: none; /* Start hidden */
 }
-
+ 
 #chatbot-header {
     background-color: #ffcc00; /* Header matches button color */
     color: #000;
