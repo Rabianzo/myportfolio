@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home - My Portfolio</title>
+    <title>FAQ Chatbot</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel=" icon" href="icon.jpg" type="image/png" sizes="">
     <style>
@@ -45,13 +46,39 @@
         <h1>Hey there, and welcome to my portfolio!</h1>
 
         <p>I’m Morena R. Macheka, a software developer who’s really into building things that solve real problems.</p>
-        <p>I love the challenge of turning ideas into functional, reliable solutions.</p>
+        
         <p>Writing clean, efficient code that makes a difference is what keeps me going.</p>
-        <p>Feel free to browse through my portfolio to learn more about me.</p>
+        
     </div>
 
+
+<!-- Chatbot Icon -->
+<div id="chatbot-icon" onclick="toggleChatbot()">
+    💬
+</div>
+
+<!-- Chatbot Container -->
+<div id="chatbot">
+    <div id="chatbot-header">Hi, I'm ZonzoBot</div>
+    <div id="chat-window">
+        <div id="messages"></div>
+    </div>
+    <div id="faq-questions">
+        <button onclick="handleFAQClick('What are your hours of operation?')">What are your hours of operation?</button>
+        <button onclick="handleFAQClick('Which programming languages are you proficient in?')">Which programming languages are you proficient in?</button>
+        <button onclick="handleFAQClick('Where is your office located?')">Where is your office located?</button>
+        <button onclick="handleFAQClick('What services do you offer?')">What services do you offer?</button>
+    </div>
+    <!-- Close Button -->
+    <div id="chatbot-close">
+        <button onclick="toggleChatbot()">Close</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
     <footer>
-        <p>&copy; 2024 My Portfolio. Morena R. Macheka. <a href="mailto:morena.macheka@capaciti.org.za">. All Rights Reserved.</p>
+        <p>&copy; 2024 My Portfolio. Morena R. Macheka. morena.macheka@capaciti.org.za. All Rights Reserved.</p>
     </footer>
 </body>
 </html>

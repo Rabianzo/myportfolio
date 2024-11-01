@@ -38,7 +38,7 @@
     <div class="background"></div>
     <div class="contact-container">
           <h1>Let's Connect</h1>
-          <form class="form" action="your-server-endpoint" method="POST">
+          <form class="form" action="https://formspree.io/f/xyzyeygz" method="POST"> 
               <input type="text" name="name" placeholder="Your Name & Surname" required>
               <input type="email" name="email" placeholder="Your Email" required>
               <textarea name="message" placeholder="Your Message" required></textarea>
@@ -58,8 +58,33 @@
     </div>
     
     
+    <!-- Chatbot Icon -->
+    <div id="chatbot-icon" onclick="toggleChatbot()">
+        💬
+    </div>
+
+    <!-- Chatbot Container -->
+    <div id="chatbot">
+        <div id="chatbot-header">Hi, I'm ZonzoBot</div>
+        <div id="chat-window">
+            <div id="messages"></div>
+        </div>
+        <div id="faq-questions">
+            <button onclick="handleFAQClick('What are your hours of operation?')">What are your hours of operation?</button>
+            <button onclick="handleFAQClick('Which programming languages are you proficient in?')">Which programming languages are you proficient in?</button>
+            <button onclick="handleFAQClick('Where is your office located?')">Where is your office located?</button>
+            <button onclick="handleFAQClick('What services do you offer?')">What services do you offer?</button>
+        </div>
+        <!-- Close Button -->
+        <div id="chatbot-close">
+            <button onclick="toggleChatbot()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
     <footer>
-        <p>&copy; 2024 My Portfolio.<a href="mailto:morena.macheka@capaciti.org.za"></a> Morena R. Macheka. All Rights Reserved.</p>
+        <p>&copy; 2024 My Portfolio. Morena R. Macheka. morena.macheka@capaciti.org.za. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
