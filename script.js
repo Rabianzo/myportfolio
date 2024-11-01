@@ -32,7 +32,7 @@ function generateBotResponse(question) {
             botResponse = "We're open from 8 AM to 4 PM, Monday to Friday.";
             break;
         case "How can I contact customer support?":
-            botResponse = "You can contact customer support via email at support@example.com or call us at (123) 456-7890.";
+            botResponse = "Our developers are proficient in HTML, CSS, JavaScript, TypeScript, C, Flutter & Dart.";
             break;
         case "Where is your office located?":
             botResponse = "Our office is located at 19 Ameshoff St, Braamfontein, Johannesburg.";
