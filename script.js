@@ -31,7 +31,7 @@ function generateBotResponse(question) {
         case "What are your hours of operation?":
             botResponse = "We're open from 8 AM to 4 PM, Monday to Friday.";
             break;
-        case "How can I contact customer support?":
+        case "Which programming languages are you proficient in?":
             botResponse = "Our developers are proficient in HTML, CSS, JavaScript, TypeScript, C, Flutter & Dart.";
             break;
         case "Where is your office located?":
