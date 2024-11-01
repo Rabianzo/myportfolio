@@ -29,13 +29,13 @@ function generateBotResponse(question) {
     // Predefined responses for FAQ questions
     switch (question) {
         case "What are your hours of operation?":
-            botResponse = "We're open from 9 AM to 5 PM, Monday to Friday.";
+            botResponse = "We're open from 8 AM to 4 PM, Monday to Friday.";
             break;
         case "How can I contact customer support?":
             botResponse = "You can contact customer support via email at support@example.com or call us at (123) 456-7890.";
             break;
         case "Where is your office located?":
-            botResponse = "Our office is located at 123 Main St, Springfield.";
+            botResponse = "Our office is located at 19 Ameshoff St, Braamfontein, Johannesburg.";
             break;
         case "What services do you offer?":
             botResponse = "We offer a variety of services including consulting, support, and software development.";
